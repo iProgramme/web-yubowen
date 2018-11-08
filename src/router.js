@@ -10,24 +10,30 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'index',
+      component: () => import('./views/index/index.vue')
+    },
+    {
+      path: '/home',
       name: 'home',
       component: Home
     },
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-        path: '/index',
-        name: 'index',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ './views/index/index.vue')
+        path:'/weibo',
+        name:'weibo',
+        component: () => import(/* webpackChunkName: "about" */ './views/trace/trace.vue'),
+        children: [
+            {
+                path: 'trace',
+                name: 'trace',
+                component: () => import(/* webpackChunkName: "about" */ './views/trace/trace.vue')
+            }
+        ]
     }
   ]
 })

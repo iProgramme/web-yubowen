@@ -14,3 +14,18 @@ npm run serve
 ```
 npm run build
 ```
+
+
+### 代码架构
+- 空 router
+	- index
+	- 视频 菜单 component
+		- 路由内页
+	- 博客 菜单 component
+		- 内页
+	- 导航 完整
+	- 非技术关注
+		- 待定
+
+### 所用技术
+vue，jQuery/fullpage（旧版不需要license），three.js
