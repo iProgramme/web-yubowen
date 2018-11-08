@@ -62,16 +62,160 @@
         position: absolute;
         left: 50%;
     }
-    .inside-circle{
-        li{
-            animation: myMove1 5s linear infinite;
+}
+.outside-circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    border: 1px dashed gray;
+    li{
+        width: 40px;
+        position: absolute;
+        height: 40px;
+        border-radius: 20px;
+        background-color: transparent;
+        animation:outSide 12s ease-out infinite;
+        &:after{
+            position: absolute;
+            content: '';
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background-color: yellow;
+            animation: outSideAfter  12s  ease-in infinite;
+            left: 0;
+            top: 0;
+            border-radius: 40px;
+        }
+        &:nth-child(1){
+            animation-delay:-10s;
+            &:after{
+                animation-delay: -10s;
+                content: 'ES6';
+            }
+        }
+        &:nth-child(2){
+            animation-delay:-8s;
+            &:after{
+                animation-delay: -8s;
+                content: 'git';
+            }
+        }
+        &:nth-child(3){
+            animation-delay:-6s;
+            &:after{
+                animation-delay: -6s;
+                content:'Vue';
+            }
+        }
+        &:nth-child(4){
+            animation-delay:-4s;
+            &:after{
+                animation-delay: -4s;
+                content:'ng4';
+            }
+        }
+        &:nth-child(5){
+            animation-delay:-2s;
+            &:after{
+                animation-delay: -2s;
+                content:'less';
+            }
+        }
+        &:nth-child(6){
+            animation-delay:0s;
+            &:after{
+                animation-delay: 0s;
+                content:'h5c3';
+            }
         }
     }
 }
-@keyframes myMove1 {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+@keyframes outSide{
+    0%{left: 130px;animation-timing-function: ease-out}
+    25%{left: 280px;animation-timing-function: ease-in}
+    50%{left: 130px;animation-timing-function: ease-out}
+    75%{left: -20px;animation-timing-function: ease-in}
+    100%{left: 130px;animation-timing-function: ease-out}
 }
+@keyframes outSideAfter{
+    0%{top:-20px;animation-timing-function: ease-in}
+    25%{top:130px;animation-timing-function: ease-out}
+    50%{top:280px;animation-timing-function: ease-in}
+    75%{top:130px;animation-timing-function: ease-out}
+    100%{top:-20px;animation-timing-function: ease-in}
+}
+
+.inside-circle{
+    width: 180;
+    height: 180;
+    border-radius: 280px;
+    border: 1px dashed gray;
+    margin-top: 50px;
+    margin-left: 50px;
+    li{
+        width: 180px;
+        position: absolute;
+        height: 180px;
+        border-radius: 280px;
+        background-color: transparent;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            background: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            animation:inSideAn 3s ease-in-out infinite alternate;
+        }
+        &:nth-child(1){
+            transform: rotate(90deg);
+        }
+        &:nth-child(2){
+            transform: rotate(60deg);
+            &:after{
+                animation-delay: -0.5s;
+            }
+        }
+        &:nth-child(3){
+            transform: rotate(30deg);
+            &:after{
+                animation-delay: -1s;
+            }
+        }
+        &:nth-child(4){
+            transform: rotate(0deg);
+            &:after{
+                animation-delay: -1.5s;
+            }
+        }
+        &:nth-child(5){
+            transform: rotate(-30deg);
+            &:after{
+                animation-delay: -2s;
+            }
+        }
+        &:nth-child(6){
+            transform: rotate(-60deg);
+            &:after{
+                animation-delay: -2.5s;
+            }
+        }
+    }
+}
+@keyframes inSideAn{
+    from{
+        left: 160px;
+        top:160px;
+    }
+    to{
+        left: 0px;
+        top: 0px;
+    }
+}
+
+
 
 // 以下是转动方块的样式
 .mouseMo li {

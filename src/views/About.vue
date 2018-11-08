@@ -15,6 +15,9 @@ export default {
             time:5,
         }
     },
+    activated(){
+        this.time = 5
+    },
     mounted() {
         setInterval(()=>{
             this.time--

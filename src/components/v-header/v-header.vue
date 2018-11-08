@@ -42,12 +42,12 @@
                     </Col>
                     <Col span="12">
                         Website: <a href="https://www.yubowen2003.com" target="_blank">https://www.yubowen2003.com</a>
-                        </Col>
+                    </Col>
                 </Row>
                 Message: Hello, Developer
             </div>
             <Divider />
-            <p class="pStyle">Company</p>
+            <p class="pStyle">me</p>
             <div class="demo-drawer-profile">
                 <Row>
                     <Col span="12">
@@ -59,7 +59,7 @@
                 </Row>
                 <Row>
                     <Col span="12">
-                        Department: Map visualization
+                        Department: 
                     </Col>
                 </Row>
                 Skills:JavaScript，HTML5，CSS3，Vue，less，Angular，ES6，git，node.js，Python

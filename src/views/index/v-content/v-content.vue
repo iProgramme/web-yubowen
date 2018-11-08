@@ -48,10 +48,10 @@
                             <div class="skills">
                                 <div>&nbsp;</div>
                                 <ul class="circle outside-circle">
-                                    <li v-for="item in outsideArr" :key="item">{{item}}</li>
+                                    <li v-for="item in outsideArr" :key="item"></li>
                                 </ul>
                                 <ul class="circle inside-circle">
-                                    <li v-for="item in insideArr" :key="item">{{item}}</li>
+                                    <li v-for="item in outsideArr" :key="item"></li>
                                 </ul>
                             </div>
                         </Col>
@@ -69,41 +69,17 @@
             </div>
             <div class="section section4">
                 <div class="section-content">
-                    <Carousel v-model="value1" loop autoplay :autoplay-speed="5000" on-change="carouselChange">
-                        <CarouselItem>
+                    <Carousel v-model="value1" arrow="always" loop autoplay :autoplay-speed="5000" on-change="carouselChange">
+                        <CarouselItem v-for="item in experience" :key="item.id">
                             <div class="demo-carousel">
-                                <h3>浙江车国网络</h3>
-                                <p>项目搭建与复用组件的开发</p>
-                                <p>项目技术选型，项目搭建与复用组件的开发</p>
-                                <p>项目技术选型，项目搭建与复用组件的开发</p>
-                                <p>项目技术选型，项目搭建与复用组件的开发</p>
+                                <h3>{{item.company}}</h3>
+                                <p v-for="list in item.details" :key="list">{{list}}</p>
                             </div>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <div class="demo-carousel">
-                                <h3>广州棒谷科技有限公司</h3>
-                                <p>项目技术选型，项目搭建与复用组件的开发</p>
-                                <p>参与项目技术选型，项目搭建与复用组件的开发</p>
-                                <p>参与项目技术选型，项目搭建与复用组件的开发</p>
-                                <p>参与项目技术选型，项目搭建与复用组件的开发</p>
-                            </div>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <div class="demo-carousel">
-                                <h3>北京宇信科技集团股份有限公司</h3>
-                                <p>配合需求，参与研讨项目技术方案及系统优化</p>
-                                <p>利用AngularJS做前后端交互</p>
-                                <p>参与静态响应式页面的开发工作</p>
-                                <p>调IE6-8的兼容性</p>
-                            </div>
-                        </CarouselItem>
-                        <CarouselItem>
-                            <div class="demo-carousel">4</div>
                         </CarouselItem>
                     </Carousel>
                 </div>
             </div>
-            <div class="section section4">
+            <div class="section section5">
                 <div class="section-content">
                     <ul class="mouseMo">
                         <li>

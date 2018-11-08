@@ -1,4 +1,3 @@
-// new ad(document.querySelectorAll('.mouseMo li'))
 export default {
     data () {
         return {
