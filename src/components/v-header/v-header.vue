@@ -10,19 +10,17 @@
             </li>
         </ul>
         <!-- 左边的抽屉 -->
-        <Drawer title="Basic Drawer" placement="left" :closable="false" v-model="value0">
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
+        <Drawer class="drawer-left" title="我的动态" placement="left" :closable="false" v-model="value0">
+            <p>我现在，等着查游泳救生员有没有考过呢... <br> <span class="fr">2018-11-09 11:00:01</span></p>
+            
         </Drawer>
         <!-- 右边的信息展示抽屉 -->
         <Drawer class="drawer-right" :closable="false" width="640" v-model="value1">
-            <p class="pStyle">User information</p>
-            <p class="pStyle">basic information</p>
+            <p class="pStyle">基本信息</p>
             <div class="demo-drawer-profile">
                 <Row>
                     <Col span="12">
-                        Full Name: 喻博文
+                        全名: 喻博文
                     </Col>
                     <Col span="12">
                         Email: yubowen2003@yubowen2003.com
@@ -30,54 +28,97 @@
                 </Row>
                 <Row>
                     <Col span="12">
-                        City: 杭州
+                        城市: 杭州
                     </Col>
-                    <Col span="12">
-                        Country: 中国
-                    </Col>
-                </Row>
-                <Row>
-                    <Col span="12">
-                        Birthday: 1993-02-08
-                    </Col>
-                    <Col span="12">
-                        Website: <a href="https://www.yubowen2003.com" target="_blank">https://www.yubowen2003.com</a>
-                    </Col>
-                </Row>
-                Message: Hello, Developer
-            </div>
-            <Divider />
-            <p class="pStyle">me</p>
-            <div class="demo-drawer-profile">
-                <Row>
-                    <Col span="12">
-                        Position: 前端开发工程师
-                    </Col>
-                    <Col span="12">
-                        Responsibilities:Coding
-                    </Col>
-                </Row>
-                <Row>
-                    <Col span="12">
-                        Department: 
-                    </Col>
-                </Row>
-                Skills:JavaScript，HTML5，CSS3，Vue，less，Angular，ES6，git，node.js，Python
-            </div>
-            <Divider />
-            <p class="pStyle">Contacts</p>
-            <div class="demo-drawer-profile">
-                <Row>
-                    <Col span="12">
-                        Email: yubowen2003@yubowen2003.com
-                    </Col>
-                    <Col span="12">
-                        Phone Number: +86 18888888888
-                    </Col>
-                </Row>
-                <Row>
                     <Col span="12">
                         GitHub: <a href="https://github.com/iProgramme" target="_blank">https://github.com/iProgramme</a>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col span="12">
+                        生日: 1993-02-08
+                    </Col>
+                    <Col span="12">
+                        站点: <a href="https://www.yubowen2003.com" target="_blank">https://www.yubowen2003.com</a>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col span="12">
+                        我的格言: 你连坚持都没有，还谈什么未来
+                    </Col>
+                </Row>
+            </div>
+            <Divider />
+            <p class="pStyle">职业技能</p>
+            <div class="demo-drawer-profile">
+                <Row>
+                    <Col span="12">
+                        职位: 前端开发工程师
+                    </Col>
+                    <Col span="12">
+                        责任:Coding
+                    </Col>
+                </Row>
+                <Row>
+                    <Col span="24">
+                        技能:JavaScript，HTML5，CSS3，Vue，less，Angular，ES6，git，node.js，Python
+                    </Col>
+                </Row>
+                <Row>
+                    <Col span="24">
+                        <ul>
+                            <li>1. 熟练使用webstorm，vscode，GitHub desktop，source tree，Chrome，terminal，Mac</li>
+                            <li>2. 有HTML5、CSS3、Canvas开发经验。</li>
+                            <li>3. 熟悉es6语法，熟悉promise，generator/yelid，async/await</li>
+                            <li>4. 完整Vue开发经验；完整Angular开发经验（后来不常用了）</li>
+                            <li>5. 了解node.js，写过简易爬虫</li>
+                            <li>6. 了解Python，用scrapy写过简易爬虫</li>
+                        </ul>
+                    </Col>
+                </Row>
+            </div>
+            <Divider />
+            <p class="pStyle">联系我</p>
+            <div class="demo-drawer-profile">
+                <Row>
+                    <Col span="12">
+                        Email: 747137830@qq.com
+                    </Col>
+                    <Col span="12">
+                        电话: +86 18888888888
+                    </Col>
+                </Row>
+            </div>
+            <Divider />
+            <p class="pStyle">我的简介</p>
+            <div class="demo-drawer-profile">
+                <Row>
+                    <Col span="24">
+                        1. 永远喜欢新的事物，不喜欢过时的，学习能力强
+                    </Col>
+                </Row>
+                <Row>
+                    <Col span="24">
+                        2. 有毅力特别能坚持，但只坚持自己认为正确的事情
+                    </Col>
+                </Row>
+                <Row>
+                    <Col span="24">
+                        3. 为人直爽，说话做事单刀直入不拐弯抹角，也因此常常得罪人
+                    </Col>
+                </Row>
+                <Row>
+                    <Col span="24">
+                        4. 言必行，行必果
+                    </Col>
+                </Row>
+            </div>
+            <Divider />
+            <p class="pStyle">兴趣爱好</p>
+            <div class="demo-drawer-profile">
+                <Row>
+                    <Col span="24">
+                        三国（最喜欢的人物：郭嘉），游泳，玩游戏，看电影
                     </Col>
                 </Row>
             </div>

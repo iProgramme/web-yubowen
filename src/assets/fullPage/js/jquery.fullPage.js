@@ -1703,7 +1703,8 @@
 
 		/**
 		* Adds the possibility to auto scroll through sections on touch devices.
-		*/
+        */
+        var MSPointer = null;
 		function addTouchHandler(){
 			if(isTouchDevice || isTouch){
 				//Microsoft pointers
