@@ -1,5 +1,6 @@
 
 <template>
+    <!-- 以我现在的水平，去小公司，能学到的东西已经不多了，去大公司还能学到很多，产品，业务，技术等等 -->
     <Header :style="{position: 'fixed', width: '100%'}">
         <ul class="Header-ul fr">
             <li v-for="item in headers" :key="item.id">

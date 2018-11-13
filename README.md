@@ -21,6 +21,8 @@ npm run build
 	- index
 	- 视频 菜单 component
 		- 路由内页
+    - demo代码合集
+        - 分类代码合集（类似后台管理系统）
 	- 博客 菜单 component
 		- 内页
 	- 导航 完整
