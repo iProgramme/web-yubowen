@@ -34,6 +34,6 @@ export default new Router({
                 component: () => import(/* webpackChunkName: "about" */ './views/trace/trace.vue')
             }
         ]
-    }
+    },
   ]
 })

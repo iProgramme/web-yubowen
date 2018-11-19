@@ -1,3 +1,4 @@
+var  CompressionWebpackPlugin = require("compression-webpack-plugin")
 module.exports = {
     // 基本路径
     baseUrl: '/',
@@ -11,7 +12,19 @@ module.exports = {
     // webpack配置
     // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
     chainWebpack: () => {},
-    configureWebpack: ()=>{},
+    configureWebpack: (config)=>{
+        if(process.env.NODE_ENV == 'production'){
+            return {
+                plugins:[
+                    new CompressionWebpackPlugin({
+                        test:/\.js$|\.css$\.html$/,
+                        threshold:10240,
+                        deleteOriginalAssets:false
+                    })
+                ]
+            }
+        }
+    },
     // vue-loader 配置项
     // https://vue-loader.vuejs.org/en/options.html
     // vueLoader: {},

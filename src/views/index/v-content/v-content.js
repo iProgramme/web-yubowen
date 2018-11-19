@@ -60,7 +60,7 @@ export default {
     mounted() {
         var ad = require('../../../assets/mouseMove/js/index.d.js')
         $('#dowebok').fullpage({
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90','#4BBFC3'],
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#1bbc9b','#4BBFC3'],
             // continuousVertical: true,
             // 'navigation': true,
             // fixedElements: '#header, .footer',

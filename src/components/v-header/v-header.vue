@@ -12,6 +12,7 @@
         </ul>
         <!-- 左边的抽屉 -->
         <Drawer class="drawer-left" title="我的动态" placement="left" :closable="false" v-model="value0">
+            <p>我不是工作的奴隶。令狐冲说：如果我们改变不了环境，就改变我们自己。他的意思是，如果你改变不了环境，就提升自己，去到一个更好的环境。 <br> <span class="fr">2018-11-15 17:59:43</span></p>
             <p>我现在，等着查游泳救生员有没有考过呢... <br> <span class="fr">2018-11-09 11:00:01</span></p>
             
         </Drawer>
